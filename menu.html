@@ -2,200 +2,398 @@
 <html>
 	<head>
 		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
+		<meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 		<style>
 			.wrapper {
-  padding: 2em 1em;
-  background: #fff;
-  columns: 100px 1;
-  column-gap:32px;
-  @media (min-width: 600px) {
-    padding: 1em calc(50% - 300px);
+				padding: 2em 1em;
+				background: #fff;
+				columns: 100px 1;
+				column-gap:32px;
+				@media (min-width: 600px) {
+					padding: 1em calc(50% - 300px);
+				}
+			}
+
+			.item {
+			/* border-bottom: 1px dotted #c5c5c5; */
+			break-inside: avoid;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 15px;
+			}
+			/* span {
+			font-family: "Teko", sans-serif;
+			margin-bottom: -4px;
+			background: #fff;
+			padding: 4px;
+			color:black;
+			} */
+			.list-title {
+			font-family: "Teko", sans-serif;
+			font-size: 30px;
+			color: #e67437;
+			margin-bottom:32px;
+			}		
+			.list {
+			margin-bottom:32px;
+			}
+
+			/* column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+} */
+
+/* Remove extra left and right margins, due to padding */
+/* .row {margin: 0 -5px;} */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive columns */
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
   }
-}
+} */
 
-.item {
-  /* border-bottom: 1px dotted #c5c5c5; */
-  break-inside: avoid;
-  display: flex;
-  justify-content: space-between;
-  /* margin-top: 10px; */
-}
-span {
-  font-family: "Teko", sans-serif;
-  margin-bottom: -4px;
-  background: #fff;
-  padding: 4px;
-  color:black;
-}
-.list-title {
-  font-family: "Teko", sans-serif;
-  font-size: 30px;
-  color: #e67437;
-  margin-bottom:32px;
-}
-.list {
-  margin-bottom:32px;
-}
-
+/* Style the counter cards */
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 6px;
+  text-align: center;
+  background-color: #f1f1f1;
+} */
 		</style>
 	</head>
 	<body>
 		<div style="background-color: #e67437;color: white;padding: 10px;">
-			<h1 ><center>HOTEL ANANDA</center></h1>
-			<h1><center>Menu</center></h1>
+			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
+		<!-- <h1 class="list-title"><center>BREAKFAST / காலை உணவு</center></h1> -->
+		<!-- <div class="container" >
+			<div class="row">
+				<div class="col-3">
+					<span><h5>Sweets</h5></span></div>
+					<div class="col-1">
+				<span class="price"><h5>-</h5></span></div>
+				<div class="col-3">
+				<span class="price"><h5>ஸ்வீட்ஸ்</h5></span></div>
+				<div class="col-1">
+				<span class="price"><h5>-</h5></span></div>
+				<div class="col-3">
+			  <span class="price"><h5>15</h5></span></div>
+				</div>
+				
+				
+				
+			</div>
+			<div class="item"><span class="name"><h5>Ittli</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>இட்லி</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>8</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Pongal</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>பொங்கல்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Medu Vadai</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>மெது வடை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>10</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Sambar Vadai</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>சாம்பார் வடை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>20</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Curd Vadai</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>தயிர் வடை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>20</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Poori Masala</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>பூரி மசாலா</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Poori(1 Pc)</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>பூரி(1 பீஸ்)</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>18</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Plain Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Spl Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>ஸ்பெஷல் தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>45</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Masala Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>மசாலா தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>50</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Ghee Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>நெய் தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>55</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Onion Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>வெங்காயம் பாவம்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>65</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Kal Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>கல் தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Paper Roast</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>பேப்பர் ரோஸ்ட்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>65</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Paper Masala Roast</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>பேப்பர் மசாலா ரோஸ்ட்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>80</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Rava Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>ரவா தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Spl Rava Dosa</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>ஸ்பெஷல் ரவா தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>60</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Ghee Onion Rava</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>நெய் வெங்காய தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>65</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Onion Rava</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>வெங்காய ரவா தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>50</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Uthappam</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>ஊத்தப்பம்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Onion Uthappam</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>வெங்காய ஊத்தப்பம்</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>60</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Mini Sambar Itli(8 pc)</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>மினி சாம்பார் இட்லி(8 பீஸ்)</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>40</h5></span>
+			</div>
+			<div class="item"><span class="name"><h5>Ghee Rava</h5></span>
+				<span class="price"><h5>-</h5></span>
+				<span class="price"><h5>நெய் ரவா தோசை</h5></span>
+				<span class="price"><h5>-</h5></span>
+			  <span class="price"><h5>60</h5></span>
+			</div>
+		</div> -->
+		
 		<div class="wrapper">
-			
 			<div class="list">
 			  <h1 class="list-title"><center>BREAKFAST / காலை உணவு</center></h1>
 			  <ul>
-				<li class="item"><span class="name"><h1>Sweets</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>ஸ்வீட்ஸ்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>15</h1></span>
+				<li class="item"><span class="name">Sweets</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">ஸ்வீட்ஸ்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">15</span>
 				</li>
-				<li class="item"><span class="name"><h1>Ittli</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>இட்லி</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>8</h1></span>
+				<li class="item"><span class="name">Ittli</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">இட்லி</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">8</span>
 				</li>
-				<li class="item"><span class="name"><h1>Pongal</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>பொங்கல்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Pongal</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">பொங்கல்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Medu Vadai</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>மெது வடை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>10</h1></span>
+				<li class="item"><span class="name">Medu Vadai</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">மெது வடை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">10</span>
 				</li>
-				<li class="item"><span class="name"><h1>Sambar Vadai</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>சாம்பார் வடை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>20</h1></span>
+				<li class="item"><span class="name">Sambar Vadai</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">சாம்பார் வடை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">20</span>
 				</li>
-				<li class="item"><span class="name"><h1>Curd Vadai</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>தயிர் வடை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>20</h1></span>
+				<li class="item"><span class="name">Curd Vadai</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">தயிர் வடை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">20</span>
 				</li>
-				<li class="item"><span class="name"><h1>Poori Masala</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>பூரி மசாலா</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Poori Masala</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">பூரி மசாலா</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Poori(1 Pc)</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>பூரி(1 பீஸ்)</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>18</h1></span>
+				<li class="item"><span class="name">Poori(1 Pc)</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">பூரி(1 பீஸ்)</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">18</span>
 				</li>
-				<li class="item"><span class="name"><h1>Plain Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Plain Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Spl Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>ஸ்பெஷல் தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>45</h1></span>
+				<li class="item"><span class="name">Spl Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">ஸ்பெஷல் தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">45</span>
 				</li>
-				<li class="item"><span class="name"><h1>Masala Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>மசாலா தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>50</h1></span>
+				<li class="item"><span class="name">Masala Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">மசாலா தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">50</span>
 				</li>
-				<li class="item"><span class="name"><h1>Ghee Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>நெய் தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>55</h1></span>
+				<li class="item"><span class="name">Ghee Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">நெய் தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">55</span>
 				</li>
-				<li class="item"><span class="name"><h1>Onion Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>வெங்காயம் பாவம்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>65</h1></span>
+				<li class="item"><span class="name">Onion Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">வெங்காயம் பாவம்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">65</span>
 				</li>
-				<li class="item"><span class="name"><h1>Kal Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>கல் தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Kal Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">கல் தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Paper Roast</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>பேப்பர் ரோஸ்ட்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>65</h1></span>
+				<li class="item"><span class="name">Paper Roast</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">பேப்பர் ரோஸ்ட்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">65</span>
 				</li>
-				<li class="item"><span class="name"><h1>Paper Masala Roast</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>பேப்பர் மசாலா ரோஸ்ட்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>80</h1></span>
+				<li class="item"><span class="name">Paper Masala Roast</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">பேப்பர் மசாலா ரோஸ்ட்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">80</span>
 				</li>
-				<li class="item"><span class="name"><h1>Rava Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>ரவா தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Rava Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">ரவா தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Spl Rava Dosa</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>ஸ்பெஷல் ரவா தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>60</h1></span>
+				<li class="item"><span class="name">Spl Rava Dosa</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">ஸ்பெஷல் ரவா தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">60</span>
 				</li>
-				<li class="item"><span class="name"><h1>Ghee Onion Rava</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>நெய் வெங்காய தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>65</h1></span>
+				<li class="item"><span class="name">Ghee Onion Rava</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">நெய் வெங்காய தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">65</span>
 				</li>
-				<li class="item"><span class="name"><h1>Onion Rava</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>வெங்காய ரவா தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>50</h1></span>
+				<li class="item"><span class="name">Onion Rava</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">வெங்காய ரவா தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">50</span>
 				</li>
-				<li class="item"><span class="name"><h1>Uthappam</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>ஊத்தப்பம்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Uthappam</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">ஊத்தப்பம்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Onion Uthappam</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>வெங்காய ஊத்தப்பம்</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>60</h1></span>
+				<li class="item"><span class="name">Onion Uthappam</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">வெங்காய ஊத்தப்பம்</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">60</span>
 				</li>
-				<li class="item"><span class="name"><h1>Mini Sambar Itli(8 pc)</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>மினி சாம்பார் இட்லி(8 பீஸ்)</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>40</h1></span>
+				<li class="item"><span class="name">Mini Sambar Itli(8 pc)</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">மினி சாம்பார் இட்லி(8 பீஸ்)</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">40</span>
 				</li>
-				<li class="item"><span class="name"><h1>Ghee Rava</h1></span>
-					<span class="price"><h1>-</h1></span>
-					<span class="price"><h1>நெய் ரவா தோசை</h1></span>
-					<span class="price"><h1>-</h1></span>
-				  <span class="price"><h1>60</h1></span>
+				<li class="item"><span class="name">Ghee Rava</span>
+					<!-- <span class="price">-</span> -->
+					<span class="price">நெய் ரவா தோசை</span>
+					<!-- <span class="price">-</span> -->
+				  <span class="price">60</span>
 				</li>
 			  </ul>
 			</div>
+		</div>
+		<div style="background-color: #e67437;color: white;padding: 10px;">
+			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
+			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
 	</body>
 </html>
