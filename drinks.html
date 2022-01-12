@@ -4,138 +4,86 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				@media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#66545";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #665454;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #e67437;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>HOT DRINKS</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Tea</span>
-				
-					<span class="price">டீ</span>
-				
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Coffee</span>
-				
-					<span class="price">காபி</span>
-				
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Sunrice Coffee</span>
-				
-					<span class="price">சன்ரைஸ் காபி</span>
-				
-				  <span class="price">17</span>
-				</li>
-				<li class="item"><span class="name">Milk</span>
-				
-					<span class="price">பால்</span>
-				
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Turmeric Milk</span>
-				
-					<span class="price">மஞ்சள் பால்</span>
-				
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Dates Milk</span>
-				
-					<span class="price">பேரிச்சை பால்</span>
-				
-				  <span class="price">25</span>
-				</li>
-				<li class="item"><span class="name">Black Tea</span>
-				
-					<span class="price">பிளாக் டீ</span>
-				
-				  <span class="price">12</span>
-				</li>
-				<li class="item"><span class="name">Lemon Tea</span>
-					<span class="price">லெமன் டீ</span>
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Boost</span>
-					<span class="price">பூஸ்ட்</span>
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Horlicks</span>
-					<span class="price">ஹார்லிக்ஸ்</span>
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Badam Milk</span>
-					<span class="price">பாதாம் பால்</span>
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Palm Sugar Milk</span>
-					<span class="price">பனங்கற்கண்டு பால்</span>
-				  <span class="price">17</span>
-				</li>
-				<li class="item"><span class="name">Nattu Sugar Coffee</span>
-					<span class="price">நாட்டு சர்க்கரை காபி</span>
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Nattu Sugar Tea</span>
-					<span class="price">நாட்டு சாக்கரை டீ</span>
-				  <span class="price">17</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>HOT DRINKS</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Tea</td>
+			
+				<td class="d2">டீ</td>
+			
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Coffee</td>
+			
+				<td class="d2">காபி</td>
+			
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Sunrice Coffee</td>
+			
+				<td class="d2">சன்ரைஸ் காபி</td>
+			
+				<td class="d2">17.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Milk</td>
+			
+				<td class="d2">பால்</td>
+			
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Turmeric Milk</td>
+			
+				<td class="d2">மஞ்சள் பால்</td>
+			
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Dates Milk</td>
+			
+				<td class="d2">பேரிச்சை பால்</td>
+			
+				<td class="d2">25.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Black Tea</td>
+			
+				<td class="d2">பிளாக் டீ</td>
+			
+				<td class="d2">12.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Lemon Tea</td>
+				<td class="d2">லெமன் டீ</td>
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Boost</td>
+				<td class="d2">பூஸ்ட்</td>
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Horlicks</td>
+				<td class="d2">ஹார்லிக்ஸ்</td>
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Badam Milk</td>
+				<td class="d2">பாதாம் பால்</td>
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Palm Sugar Milk</td>
+				<td class="d2">பனங்கற்கண்டு பால்</td>
+				<td class="d2">17.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Nattu Sugar Coffee</td>
+				<td class="d2">நாட்டு சர்க்கரை காபி</td>
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Nattu Sugar Tea</td>
+				<td class="d2">நாட்டு சாக்கரை டீ</td>
+				<td class="d2">17.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
