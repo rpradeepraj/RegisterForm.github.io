@@ -4,167 +4,112 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				/* @media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				} */
-				@media (min-width: 400px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#66545";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #665454;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #e67437;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>SIDEDISH / சைட்டிஸ்</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Gobi Masala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கோபி மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Aloo Gobi Maiala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">ஆலூ கோபி மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Masala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">மஸ்ரூம் மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Chinese Chenna Masala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">சென்னா மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Panneer Butter Masala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் பட்டர் மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Cashewnut Masala</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">முந்திரி மசாலா</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">110</span>
-				</li>
-				<li class="item"><span class="name">Gobi Chettinadu</span>
-					<span class="price">கோபி செட்டிநாடு</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Chettinadu</span>
-					<span class="price">மஸ்ரூம் செட்டிநாடு</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Paneer Chettinadu</span>
-					<span class="price">பன்னீர் செட்டிநாடு</span>
-				  <span class="price">95</span>
-				</li>
-				<li class="item"><span class="name">Babycorn Chettinadu</span>
-					<span class="price">பேபிகார்ன் செட்டிநாடு</span>
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Kadai Veg</span>
-					<span class="price">கடாய் வெஜ்</span>
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Kadai Mushroom</span>
-					<span class="price">கடாய் மஸ்ரூம்</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Kadai Paneer</span>
-					<span class="price">கடாய் பன்னீர்</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Gobi Manj Gravy</span>
-					<span class="price">கோபி மஞ்சு கிரேவி</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Gobi Manj Dry</span>
-					<span class="price">கோபி மஞ்சு டிரை</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Babycorn Manj Gravy</span>
-					<span class="price">பேபிகார்ன் மஞ்சு கிரேவி</span>
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Babycorn Manj Dry</span>
-					<span class="price">பேபிகார்ன் மஞ்சு டிரை</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Paneer Manj Gravy</span>
-					<span class="price">பன்னீர் மஞ்சு கிரேவி</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Paneer Manj Dry</span>
-					<span class="price">பன்னீர் மஞ்சு டிரை</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Manj Gravy</span>
-					<span class="price">மஸ்ரூம் மஞ்சு கிரேவி</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Manj Dry</span>
-					<span class="price">மஸ்ரூம் மஞ்சு டிரை</span>
-				  <span class="price">85</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>SIDEDISH / சைட்டிஸ்</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Gobi Masala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கோபி மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Aloo Gobi Maiala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">ஆலூ கோபி மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Masala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">மஸ்ரூம் மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chinese Chenna Masala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">சென்னா மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panneer Butter Masala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் பட்டர் மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Cashewnut Masala</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">முந்திரி மசாலா</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">110.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Chettinadu</td>
+				<td class="d2">கோபி செட்டிநாடு</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Chettinadu</td>
+				<td class="d2">மஸ்ரூம் செட்டிநாடு</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Chettinadu</td>
+				<td class="d2">பன்னீர் செட்டிநாடு</td>
+				<td class="d2">95.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Babycorn Chettinadu</td>
+				<td class="d2">பேபிகார்ன் செட்டிநாடு</td>
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kadai Veg</td>
+				<td class="d2">கடாய் வெஜ்</td>
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kadai Mushroom</td>
+				<td class="d2">கடாய் மஸ்ரூம்</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kadai Paneer</td>
+				<td class="d2">கடாய் பன்னீர்</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Manj Gravy</td>
+				<td class="d2">கோபி மஞ்சு கிரேவி</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Manj Dry</td>
+				<td class="d2">கோபி மஞ்சு டிரை</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Babycorn Manj Gravy</td>
+				<td class="d2">பேபிகார்ன் மஞ்சு கிரேவி</td>
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Babycorn Manj Dry</td>
+				<td class="d2">பேபிகார்ன் மஞ்சு டிரை</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Manj Gravy</td>
+				<td class="d2">பன்னீர் மஞ்சு கிரேவி</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Manj Dry</td>
+				<td class="d2">பன்னீர் மஞ்சு டிரை</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Manj Gravy</td>
+				<td class="d2">மஸ்ரூம் மஞ்சு கிரேவி</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Manj Dry</td>
+				<td class="d2">மஸ்ரூம் மஞ்சு டிரை</td>
+				<td class="d2">85.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
