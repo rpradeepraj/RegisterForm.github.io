@@ -4,122 +4,70 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				@media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#724445;
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #724445;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #724445
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color:#724445;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>SNACKS / சிற்றுண்டி (4:00 PM to 9:00 PM)</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Sweet Paniyaram</span>
-				
-					<span class="price">இனிப்பு பனியாரம்</span>
-				
-				  <span class="price">12</span>
-				</li>
-				<li class="item"><span class="name">Kaara Paniyaram</span>
-				
-					<span class="price">கார பனியாரம்</span>
-				
-				  <span class="price">5</span>
-				</li>
-				<li class="item"><span class="name">Kolukattai</span>
-				
-					<span class="price">கொழுக்கட்டை</span>
-				
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Sundal</span>
-				
-					<span class="price">சுண்டல்/span>
-				
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Pakoda</span>
-				
-					<span class="price">பக்கோடா</span>
-				
-				  <span class="price">25</span>
-				</li>
-				<li class="item"><span class="name">Kanji</span>
-				
-					<span class="price">கஞ்சி</span>
-				
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Soup</span>
-				
-					<span class="price">சூப்</span>
-				
-				  <span class="price">20</span>
-				</li>
-				<li class="item"><span class="name">Puttu</span>
-					<span class="price">புட்டு</span>
-				  <span class="price">25</span>
-				</li>
-				<li class="item"><span class="name">Samosa</span>
-					<span class="price">சமோசா</span>
-				  <span class="price">15</span>
-				</li>
-				<li class="item"><span class="name">Gulab Jamun</span>
-					<span class="price">குலோப் ஜாமூன்</span>
-				  <span class="price">20</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #724445;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>SNACKS / சிற்றுண்டி (4:00 PM to 9:00 PM)</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Sweet Paniyaram</td>
+			
+				<td class="d2">இனிப்பு பனியாரம்</td>
+			
+				<td class="d2">12.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kaara Paniyaram</td>
+			
+				<td class="d2">கார பனியாரம்</td>
+			
+				<td class="d2">5.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kolukattai</td>
+			
+				<td class="d2">கொழுக்கட்டை</td>
+			
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Sundal</td>
+			
+				<td class="d2">சுண்டல்</td>
+			
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Pakoda</td>
+			
+				<td class="d2">பக்கோடா</td>
+			
+				<td class="d2">25.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kanji</td>
+			
+				<td class="d2">கஞ்சி</td>
+			
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Soup</td>
+			
+				<td class="d2">சூப்</td>
+			
+				<td class="d2">20.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Puttu</td>
+				<td class="d2">புட்டு</td>
+				<td class="d2">25.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Samosa</td>
+				<td class="d2">சமோசா</td>
+				<td class="d2">15.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gulab Jamun</td>
+				<td class="d2">குலோப் ஜாமூன்</td>
+				<td class="d2">20.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
