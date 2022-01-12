@@ -4,388 +4,148 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				@media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#66545";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #665454;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #e67437;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-			/* column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-} */
-
-/* Remove extra left and right margins, due to padding */
-/* .row {margin: 0 -5px;} */
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-/* Responsive columns */
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 15px;
-  }
-} */
-
-/* Style the counter cards */
-/* .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 6px;
-  text-align: center;
-  background-color: #f1f1f1;
-} */
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		<!-- <h1 class="list-title"><center>BREAKFAST / காலை உணவு</center></h1> -->
-		<!-- <div class="container" >
-			<div class="row">
-				<div class="col-3">
-					<span><h5>Sweets</h5></span></div>
-					<div class="col-1">
-				<span class="price"><h5>-</h5></span></div>
-				<div class="col-3">
-				<span class="price"><h5>ஸ்வீட்ஸ்</h5></span></div>
-				<div class="col-1">
-				<span class="price"><h5>-</h5></span></div>
-				<div class="col-3">
-			  <span class="price"><h5>15</h5></span></div>
-				</div>
-				
-				
-				
-			</div>
-			<div class="item"><span class="name"><h5>Ittli</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>இட்லி</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>8</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Pongal</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>பொங்கல்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Medu Vadai</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>மெது வடை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>10</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Sambar Vadai</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>சாம்பார் வடை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>20</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Curd Vadai</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>தயிர் வடை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>20</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Poori Masala</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>பூரி மசாலா</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Poori(1 Pc)</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>பூரி(1 பீஸ்)</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>18</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Plain Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Spl Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>ஸ்பெஷல் தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>45</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Masala Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>மசாலா தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>50</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Ghee Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>நெய் தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>55</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Onion Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>வெங்காயம் பாவம்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>65</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Kal Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>கல் தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Paper Roast</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>பேப்பர் ரோஸ்ட்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>65</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Paper Masala Roast</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>பேப்பர் மசாலா ரோஸ்ட்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>80</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Rava Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>ரவா தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Spl Rava Dosa</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>ஸ்பெஷல் ரவா தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>60</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Ghee Onion Rava</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>நெய் வெங்காய தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>65</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Onion Rava</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>வெங்காய ரவா தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>50</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Uthappam</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>ஊத்தப்பம்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Onion Uthappam</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>வெங்காய ஊத்தப்பம்</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>60</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Mini Sambar Itli(8 pc)</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>மினி சாம்பார் இட்லி(8 பீஸ்)</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>40</h5></span>
-			</div>
-			<div class="item"><span class="name"><h5>Ghee Rava</h5></span>
-				<span class="price"><h5>-</h5></span>
-				<span class="price"><h5>நெய் ரவா தோசை</h5></span>
-				<span class="price"><h5>-</h5></span>
-			  <span class="price"><h5>60</h5></span>
-			</div>
-		</div> -->
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>IDIYAPPAM AND DOSA VARIETIES / இடியப்பம் மற்றும் தோசை வகைகள்</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Idiyappam</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">இடியப்பம்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">12</span>
-				</li>
-				<li class="item"><span class="name">Ragi Idiyappam</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">ராகி இடியாப்பம்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">12</span>
-				</li>
-				<li class="item"><span class="name">Kambu Idiyappam</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கம்பு இடியப்பம்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">12</span>
-				</li>
-				<li class="item"><span class="name">Veg Idiyappa Briyani</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">வெஜ் இடியாப்ப பிரியாணி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Paneer Idiyappa Biriyani</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் இடியாப்ப பிரியாணி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">95</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Idiyappa Biriyani</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">காளான் இடியாப்ப பிரியாணி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Chilli idli</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">சில்லி இட்லி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Fry Idli</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பிரை இட்லி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Pepper Idli</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பெப்பர் இட்லி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Idli Podimas</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">இட்லி பொடிமாஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Valaipoo Uthapam</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">வாழைப்பூ உத்தபம்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">55</span>
-				</li>
-				<li class="item"><span class="name">Valaithandu Uthapam</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">வாழைத்தாண்டு உத்தபம்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">55</span>
-				</li>
-				<li class="item"><span class="name">Ragi Dosa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">ராகி தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">50</span>
-				</li>
-				<li class="item"><span class="name">Kambu Desa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கம்பு தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">45</span>
-				</li>
-				<li class="item"><span class="name">Wheat Desa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கோதுமை தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">45</span>
-				</li>
-				<li class="item"><span class="name">Podi Dosa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பொடி தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">50</span>
-				</li>
-				<li class="item"><span class="name">Paneer Desa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Desa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">மஸ்ரூம் தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Gobi Maiala Dosa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கோபி மசால் தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Mix Veg Desa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">மிக்ஸ் வெஜ் தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">60</span>
-				</li>
-				<li class="item"><span class="name">Adai Dosa</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">அடை தோசை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">50</span>
-				</li>
-				<li class="item"><span class="name">Appam Kadala Curry</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">ஆப்பம் கடலை கறி</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">30</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>IDIYAPPAM AND DOSA VARIETIES / இடியப்பம் மற்றும் தோசை வகைகள்</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Idiyappam</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">இடியப்பம்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">12.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Ragi Idiyappam</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">ராகி இடியாப்பம்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">12.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kambu Idiyappam</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கம்பு இடியப்பம்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">12.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Veg Idiyappa Briyani</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">வெஜ் இடியாப்ப பிரியாணி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Idiyappa Biriyani</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் இடியாப்ப பிரியாணி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">95.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Idiyappa Biriyani</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">காளான் இடியாப்ப பிரியாணி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chilli idli</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">சில்லி இட்லி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Fry Idli</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பிரை இட்லி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Pepper Idli</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பெப்பர் இட்லி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Idli Podimas</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">இட்லி பொடிமாஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Valaipoo Uthapam</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">வாழைப்பூ உத்தபம்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">55.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Valaithandu Uthapam</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">வாழைத்தாண்டு உத்தபம்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">55.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Ragi Dosa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">ராகி தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">50.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Kambu Desa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கம்பு தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">45.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Wheat Desa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கோதுமை தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">45.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Podi Dosa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பொடி தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">50.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Desa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Desa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">மஸ்ரூம் தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Maiala Dosa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கோபி மசால் தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mix Veg Desa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">மிக்ஸ் வெஜ் தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">60.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Adai Dosa</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">அடை தோசை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">50.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Appam Kadala Curry</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">ஆப்பம் கடலை கறி</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d3">30.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
