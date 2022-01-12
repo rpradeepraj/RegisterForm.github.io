@@ -4,143 +4,88 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				/* @media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				} */
-				@media (min-width: 400px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#66545";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #665454;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #e67437;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>CHINESE ITEMS / சைனீஸ் வகைகள்</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Gobi 65</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கோபி 65</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Baby Corn 65</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பேபி கார்ன் 65</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Mushroom 65</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">மஸ்ரூம் 65</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Panner 65</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் 65</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Dragon Panneer</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">டிராகன் பன்னீர்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">120</span>
-				</li>
-				<li class="item"><span class="name">Panneer Pepper Fry</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் பெப்பர் ப்ரை</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Pepper Fry</span>
-					<span class="price">மஸ்ரூம் பெப்பர் ப்ரை</span>
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Babycorn Pepper Fry</span>
-					<span class="price">பேபிகார்ன் பெப்பர் ப்ரை</span>
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Gobi Pepper Fry</span>
-					<span class="price">கோபி பெப்பர் ப்ரை</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Chilli Gobi</span>
-					<span class="price">சில்லி கோபி</span>
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Chilli Panneer</span>
-					<span class="price">சில்லி பன்னீர்</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Chilli Mushroom</span>
-					<span class="price">சில்லி மஸ்ரூம்</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Chilli Babycorn</span>
-					<span class="price">சில்லி பேபிகார்ன்</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Panneer Tikka</span>
-					<span class="price">பன்னீர் டிக்கா</span>
-				  <span class="price">120</span>
-				</li>
-				<li class="item"><span class="name">Panneer Tikka Masala</span>
-					<span class="price">பன்னீர் டிக்கா மசாலா</span>
-				  <span class="price">120</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<h1 class="titleStyle""><center>CHINESE ITEMS / சைனீஸ் வகைகள்</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Gobi 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கோபி 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Baby Corn 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பேபி கார்ன் 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">மஸ்ரூம் 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panner 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் 65</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Dragon Panneer</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">டிராகன் பன்னீர்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">120.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panneer Pepper Fry</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் பெப்பர் ப்ரை</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Pepper Fry</td>
+				<td class="d2">மஸ்ரூம் பெப்பர் ப்ரை</td>
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Babycorn Pepper Fry</td>
+				<td class="d2">பேபிகார்ன் பெப்பர் ப்ரை</td>
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Pepper Fry</td>
+				<td class="d2">கோபி பெப்பர் ப்ரை</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chilli Gobi</td>
+				<td class="d2">சில்லி கோபி</td>
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chilli Panneer</td>
+				<td class="d2">சில்லி பன்னீர்</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chilli Mushroom</td>
+				<td class="d2">சில்லி மஸ்ரூம்</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Chilli Babycorn</td>
+				<td class="d2">சில்லி பேபிகார்ன்</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panneer Tikka</td>
+				<td class="d2">பன்னீர் டிக்கா</td>
+				<td class="d2">120.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panneer Tikka Masala</td>
+				<td class="d2">பன்னீர் டிக்கா மசாலா</td>
+				<td class="d2">120.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
