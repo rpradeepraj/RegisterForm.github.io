@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+}
+td {
+    vertical-align: top;
+}
+.d1 {
+    text-align: left;
+	color:#724445;
+	font-weight: bold;
+}
+.d2 {
+    text-align:left;
+	color:#724445;
+	font-weight: bold;
+}
+.d3 {
+    text-align:left;
+	color:#724445;
+	font-weight: bold;
+}
+.copy {
+    visibility: hidden;
+}
+.d3 {
+    white-space: nowrap;
+}
+tr {
+	height: 40px;
+}
+.header {
+	background-color: #724445;
+	color: white;padding: 10px;
+}
+.titleStyle {
+	color:#724445;
+	padding-bottom: 20px;
+}
+.footerStyle {
+	background-color: #724445;
+	color: white;
+	padding: 10px;
+}
