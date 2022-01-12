@@ -4,118 +4,66 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				@media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#724445";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #724445;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #724445;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #724445;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>NOODLES/நூடுல்ஸ்</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Veg Noodles</span>
-				
-					<span class="price">வெஜ் நூடுல்ஸ்</span>
-				
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Gobi Noodles</span>
-				
-					<span class="price">கோபி நூடுல்ஸ்</span>
-				
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Paneer Noodles</span>
-				
-					<span class="price">பன்னீர் நூடுல்ஸ்</span>
-				
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Noodles</span>
-				
-					<span class="price">மஸ்ரூம் நூடுலஸ்</span>
-				
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Mixed Noodles</span>
-				
-					<span class="price">மிக்ஸ் நூடுல்ஸ்</span>
-				
-				  <span class="price">95</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Noodles</span>
-				
-					<span class="price">செஸ்வான் நூடுல்ஸ்</span>
-				
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Mushroom Needles</span>
-				
-					<span class="price">செஸ்வான் மஸ்ரூம் நூடுல்ஸ்</span>
-				
-				  <span class="price">100</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Paneer Noodles</span>
-					<span class="price">செஸ்வான் பன்னீர் நூடுல்ஸ்</span>
-				  <span class="price">110</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Mixed Noodles</span>
-					<span class="price">செஸ்வான் மிக்ஸ் நூடுல்ஸ்</span>
-				  <span class="price">120</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color:#724445 ;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>NOODLES/நூடுல்ஸ்</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Veg Noodles</td>
+			
+				<td class="d2">வெஜ் நூடுல்ஸ்</td>
+			
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Noodles</td>
+			
+				<td class="d2">கோபி நூடுல்ஸ்</td>
+			
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Noodles</td>
+			
+				<td class="d2">பன்னீர் நூடுல்ஸ்</td>
+			
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Noodles</td>
+			
+				<td class="d2">மஸ்ரூம் நூடுலஸ்</td>
+			
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mixed Noodles</td>
+			
+				<td class="d2">மிக்ஸ் நூடுல்ஸ்</td>
+			
+				<td class="d2">95.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Noodles</td>
+			
+				<td class="d2">செஸ்வான் நூடுல்ஸ்</td>
+			
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Mushroom Needles</td>
+			
+				<td class="d2">செஸ்வான் மஸ்ரூம் நூடுல்ஸ்</td>
+			
+				<td class="d2">100.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Paneer Noodles</td>
+				<td class="d2">செஸ்வான் பன்னீர் நூடுல்ஸ்</td>
+				<td class="d2">110.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Mixed Noodles</td>
+				<td class="d2">செஸ்வான் மிக்ஸ் நூடுல்ஸ்</td>
+				<td class="d2">120.00</td>
+			</tr>			
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
