@@ -4,163 +4,108 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link href="https://fonts.googleapis.com/css?family=Teko:400,600" rel="stylesheet">
-		<meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<style>
-			.wrapper {
-				padding: 2em 1em;
-				background: #fff;
-				columns: 100px 1;
-				column-gap:32px;
-				/* @media (min-width: 600px) {
-					padding: 1em calc(50% - 300px);
-				} */
-				@media (min-width: 400px) {
-					padding: 1em calc(50% - 300px);
-				}
-			}
-
-			.item {
-			/* border-bottom: 1px dotted #c5c5c5; */
-			break-inside: avoid;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 15px;
-			color:"#66545";
-			}
-			span {
-			font-family: "Teko", sans-serif;
-			margin-bottom: -4px;
-			background: #fff;
-			padding: 4px;
-			font-weight: bold;
-			color: #665454;
-			}
-			.list-title {
-			font-family: "Teko", sans-serif;
-			font-size: 30px;
-			color: #e67437;
-			margin-bottom:32px;
-			}		
-			.list {
-			margin-bottom:32px;
-			}
-
-			ul{
-				padding-inline-start: 10px !important;
-}
-
-		</style>
+		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<div class="header">
 			<h2 ><center>HOTEL ANANDA</center></h2>
 		</div>
-		
-		
-		<div class="wrapper">
-			<div class="list">
-			  <h1 class="list-title"><center>RICE, BRIYANI / ரைஸ், பிரியாணி</center></h1>
-			  <ul>
-				<li class="item"><span class="name">Veg Fried Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">வெஜ் ப்ரைடு ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Gobi Fried Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">கோபி ப்ரைடு ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Fried Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">மஸ்ரூம் ப்ரைடு ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Panneer Fried Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">பன்னீர் ப்ரைடு ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">95</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">செஷ்வான் ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Singapore Rice</span>
-					<!-- <span class="price">-</span> -->
-					<span class="price">சிங்கப்பூர் ரைஸ்</span>
-					<!-- <span class="price">-</span> -->
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Paneer Rice</span>
-					<span class="price">செஷ்வான் பன்னீர் ரைஸ்</span>
-				  <span class="price">110</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Gobi Rice</span>
-					<span class="price">செஷ்வான் கோபி ரைஸ்</span>
-				  <span class="price">90</span>
-				</li>
-				<li class="item"><span class="name">Schezwan Mushroom Rice</span>
-					<span class="price">செஷ்வான் மஸ்ரூம் ரைஸ்</span>
-				  <span class="price">100</span>
-				</li>
-				<li class="item"><span class="name">Veg Brigani</span>
-					<span class="price">வெஜ் பிரியாணி</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Briyani</span>
-					<span class="price">மஸ்ரூம் பிரியாணி</span>
-				  <span class="price">85</span>
-				</li>
-				<li class="item"><span class="name">Gobi Brigani</span>
-					<span class="price">கோபி பிரியாணி</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Paneer Briyani</span>
-					<span class="price">பன்னீர் பிரியாணி</span>
-				  <span class="price">95</span>
-				</li>
-				<li class="item"><span class="name">Hyderabad Briyani</span>
-					<span class="price">ஹைதராபாத் பிரியாணி</span>
-				  <span class="price">110</span>
-				</li>
-				<li class="item"><span class="name">Jeera Rice</span>
-					<span class="price">சீரக ரைஸ்</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Veg Pulav</span>
-					<span class="price">வெஜ் புலாவ்</span>
-				  <span class="price">70</span>
-				</li>
-				<li class="item"><span class="name">Cashewnut Pulav</span>
-					<span class="price">முந்திரி புலாவ்</span>
-				  <span class="price">110</span>
-				</li>
-				<li class="item"><span class="name">Gobi Pulav</span>
-					<span class="price">கோபி புலாவ்</span>
-				  <span class="price">75</span>
-				</li>
-				<li class="item"><span class="name">Mushroom Pulav</span>
-					<span class="price">மஸ்ரூம் புலாவ்</span>
-				  <span class="price">80</span>
-				</li>
-				<li class="item"><span class="name">Paneer Pulav</span>
-					<span class="price">பன்னீர் புலாவ்</span>
-				  <span class="price">90</span>
-				</li>
-			  </ul>
-			</div>
-		</div>
-		<div style="background-color: #e67437;color: white;padding: 10px;">
+		<h1 class="titleStyle"><center>RICE, BRIYANI / ரைஸ், பிரியாணி</center></h1>
+		<table>
+			<tr class="item"><td class="d1">Veg Fried Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">வெஜ் ப்ரைடு ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Fried Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">கோபி ப்ரைடு ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Fried Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">மஸ்ரூம் ப்ரைடு ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Panneer Fried Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">பன்னீர் ப்ரைடு ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">95.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">செஷ்வான் ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Singapore Rice</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">சிங்கப்பூர் ரைஸ்</td>
+				<!-- <td class="d2">-</td> -->
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Paneer Rice</td>
+				<td class="d2">செஷ்வான் பன்னீர் ரைஸ்</td>
+				<td class="d2">110.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Gobi Rice</td>
+				<td class="d2">செஷ்வான் கோபி ரைஸ்</td>
+				<td class="d2">90.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Schezwan Mushroom Rice</td>
+				<td class="d2">செஷ்வான் மஸ்ரூம் ரைஸ்</td>
+				<td class="d2">100.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Veg Brigani</td>
+				<td class="d2">வெஜ் பிரியாணி</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Briyani</td>
+				<td class="d2">மஸ்ரூம் பிரியாணி</td>
+				<td class="d2">85.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Brigani</td>
+				<td class="d2">கோபி பிரியாணி</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Briyani</td>
+				<td class="d2">பன்னீர் பிரியாணி</td>
+				<td class="d2">95.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Hyderabad Briyani</td>
+				<td class="d2">ஹைதராபாத் பிரியாணி</td>
+				<td class="d2">110.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Jeera Rice</td>
+				<td class="d2">சீரக ரைஸ்</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Veg Pulav</td>
+				<td class="d2">வெஜ் புலாவ்</td>
+				<td class="d2">70.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Cashewnut Pulav</td>
+				<td class="d2">முந்திரி புலாவ்</td>
+				<td class="d2">110.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Gobi Pulav</td>
+				<td class="d2">கோபி புலாவ்</td>
+				<td class="d2">75.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Mushroom Pulav</td>
+				<td class="d2">மஸ்ரூம் புலாவ்</td>
+				<td class="d2">80.00</td>
+			</tr>
+			<tr class="item"><td class="d1">Paneer Pulav</td>
+				<td class="d2">பன்னீர் புலாவ்</td>
+				<td class="d2">90.00</td>
+			</tr>
+		</table>
+		<div class="footerStyle">
 			<h6><center>உழைப்பாளர்களின் உழைப்பால் உயர்வு</center></h6>
 			<h6><center>ஹோட்டல் ஆனந்தா</center></h6>
 		</div>
