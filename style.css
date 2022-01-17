@@ -2,22 +2,35 @@ table {
     width: 100%;
 }
 td {
-    vertical-align: top;
+    vertical-align: center;
 }
 .d1 {
     text-align: left;
 	color:#724445;
 	font-weight: bold;
+	padding-left:10px;
 }
+.thStyle {
+	text-align: center;
+	color:#5a2526;
+	font-weight:900;
+	padding-left:10px;
+}
+table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+  }
 .d2 {
     text-align:left;
 	color:#724445;
 	font-weight: bold;
+	padding-left:10px;
 }
 .d3 {
     text-align:left;
 	color:#724445;
 	font-weight: bold;
+	padding-left:10px;
 }
 .copy {
     visibility: hidden;
@@ -31,10 +44,14 @@ tr {
 .header {
 	background-color: #724445;
 	color: white;padding: 10px;
+	
 }
 .titleStyle {
 	color:#724445;
 	padding-bottom: 20px;
+}
+.tablehead {
+	color:#724445;
 }
 .footerStyle {
 	background-color: #724445;
