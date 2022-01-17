@@ -44,6 +44,7 @@ tr {
 .header {
 	background-color: #724445;
 	color: white;padding: 10px;
+	margin-bottom;20px;
 	
 }
 .titleStyle {
@@ -57,4 +58,5 @@ tr {
 	background-color: #724445;
 	color: white;
 	padding: 10px;
+	margin-top:20px;
 }
