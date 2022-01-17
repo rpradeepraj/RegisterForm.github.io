@@ -9,12 +9,16 @@ td {
 	color:#724445;
 	font-weight: bold;
 	padding-left:10px;
+	padding-right:10px;
+
 }
 .thStyle {
 	text-align: center;
 	color:#5a2526;
 	font-weight:900;
 	padding-left:10px;
+		padding-right:10px;
+
 }
 table, th, td {
 	border: 2px solid black;
@@ -25,12 +29,16 @@ table, th, td {
 	color:#724445;
 	font-weight: bold;
 	padding-left:10px;
+		padding-right:10px;
+
 }
 .d3 {
     text-align:left;
 	color:#724445;
 	font-weight: bold;
 	padding-left:10px;
+		padding-right:10px;
+
 }
 .copy {
     visibility: hidden;
